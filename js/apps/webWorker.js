@@ -16,3 +16,18 @@ function main() {
     worker.start(coupon);
   }
 }
+
+function mainGui() {
+  var box = $(".box");
+  var ball = $(".ball");
+  box.on("click", function(e) {
+    ball.animate({
+      top: e.pageY,
+      left: e.pageX
+    }, 1200);
+  });
+}
+
+$(function() {
+  mainGui();
+});
