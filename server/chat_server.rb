@@ -3,7 +3,7 @@ require "json"
 
 sockets = []
 
-EventMachine::WebSocket.start(:host => "192.168.250.130", :port => 8080) do |ws|
+EventMachine::WebSocket.start(:host => "192.168.250.237", :port => 8080) do |ws|
 
   ws.onmessage do |msg|
     puts "Received: #{msg}"
