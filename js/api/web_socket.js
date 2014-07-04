@@ -1,6 +1,9 @@
 var socket = new WebSocket("ws://myapp:8080");
 
 socket.onopen = function() {};
+// or
+socket.addEventListener("open", function() {
+});
 
 socket.onclose = function() {};
 
