@@ -6,10 +6,8 @@
 * */
 function main() {
   var coupon = [1,2,3, 15, 23, 44];
-  var workers = [];
   for (var i = 0; i < 3; i++) {
-    var worker = new Worker();
-    workers.push(worker);
+    var worker = new LottoWorker();
     worker.onEnd(function(yearsToWin) {
       console.log(yearsToWin);
     });
