@@ -1,3 +1,6 @@
+//var str = JSON.stringify(json); // serialization
+//var json = JSON.parse(str); // deserialization
+
 var socket = new WebSocket("ws://myapp:8080");
 
 socket.onopen = function() {};
