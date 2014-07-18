@@ -8,7 +8,7 @@ var SimWorker = (function() {
 
 })();
 
-function runWorkers(MyWorker) {
+function runWorkers(SimWorker) {
   for (var i = 0; i < 5; i++) {
     var worker = new SimWorker({
       id: i
